@@ -1,0 +1,38 @@
+.listItem {
+    display: flex;
+    padding: 0.5em 2em;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+.listItem:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.listItem:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.listItem:hover {
+    background-color: #eff1f5;
+}
+
+.cityName {
+    white-space: nowrap;
+    color: #003594;
+}
+
+.countryName {
+    line-height: 1.14;
+    font-size: 0.88em;
+    color: #737576;
+}
+
+.code {
+    margin-left: auto;
+    padding-left: 10px;
+    font-size: 0.88em;
+    color: #7ba0d0;
+}

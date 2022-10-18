@@ -1,0 +1,71 @@
+.toggle {
+    position: relative;
+    padding: 0 16px;
+    height: 56px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.toggle.focus {
+    border-bottom: 4px solid rgba(0, 53, 148, 0.3);
+}
+
+.input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 16px;
+    height: 56px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.autocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 16px 0 11px;
+    line-height: 54px;
+    color: rgba(94, 110, 135, 0.8);
+}
+
+.value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px 16px;
+}
+
+.subValue {
+    color: #737576;
+}
+
+.hide {
+    opacity: 0;
+}
+
+@media screen and (max-width: 420px) {
+    .input {
+        padding: 0 16px 0 12px;
+    }
+
+    .value {
+        padding: 10px 16px 10px 11px;
+    }
+}

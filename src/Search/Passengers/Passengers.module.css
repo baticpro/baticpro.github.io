@@ -1,0 +1,50 @@
+.passengers {
+    flex: 1;
+    height: 64px;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.2em 2em;
+    width: 308px;
+}
+
+.sub {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(17, 24, 32, 0.5);
+}
+
+.title {
+    margin: 16px 0 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.modalItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.sub {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(17, 24, 32, 0.5);
+}
+
+@media screen and (max-width: 920px) {
+    .passengers :global(.utair-global-list) {
+        top: 166px;
+        left: 10px;
+        width: calc(100vw - 20px - var(--scrollbar-width));
+    }
+
+    .listItem {
+        width: unset;
+    }
+}

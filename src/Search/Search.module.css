@@ -1,0 +1,109 @@
+.searchWidget {
+    position: relative;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px 10px 30px;
+}
+
+.block {
+    border-radius: 4px;
+    background-color: white;
+}
+
+.route {
+    flex: 1 0 40.4%;
+}
+
+.datepicker {
+    flex: 1 0 14.2%;
+    display: flex;
+}
+
+.passengers {
+    flex: 1 0 14%;
+    display: flex;
+}
+
+.submit {
+    padding: 0 64px;
+    height: 64px;
+    color: white;
+    background-color: #4d72b4;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.submit:disabled {
+    background-color: #1a4a9f;
+    cursor: default;
+}
+
+@media screen and (min-width: 1090px) {
+    .form {
+        width: 1160px;
+    }
+
+    .datepicker,
+    .passengers,
+    .submit {
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .form {
+        width: auto;
+    }
+
+    .route {
+        flex: 0 0 100%;
+        margin-bottom: 8px;
+    }
+
+    .datepicker {
+        flex: 1 0 30%;
+        margin-left: 0;
+    }
+
+    .passengers {
+        flex: 1 0 30%;
+        margin-left: 8px;
+    }
+
+    .submit {
+        flex: 0 0 30%;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .submit {
+        flex: 0 0 100%;
+        margin: 8px 0 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .datepicker {
+        flex: 1 0 50%;
+    }
+
+    .passengers {
+        flex: 0 0 18%;
+        margin-left: 8px;
+    }
+
+    .submit {
+        flex: 0 1 100%;
+        margin: 16px 0 0;
+        height: 48px;
+    }
+}

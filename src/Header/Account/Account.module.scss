@@ -1,0 +1,33 @@
+@import "~utair-ui-kit/build/variables";
+
+.form {
+    input {
+        outline: none;
+        margin-top: 0 !important;
+    }
+}
+
+.wrapper {
+    margin: 24px 0 16px;
+}
+
+.codeInput {
+    margin: 16px 0;
+}
+
+.button {
+    margin-top: 32px;
+    line-height: 20px;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 10px;
+    text-align: center;
+    color: $dark-50;
+}

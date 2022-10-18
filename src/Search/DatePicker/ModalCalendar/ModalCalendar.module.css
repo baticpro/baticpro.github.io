@@ -1,0 +1,113 @@
+.header {
+    background-color: #f6f8fc;
+}
+
+.headerTitle {
+    margin: 16px 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.calendar {
+    margin-bottom: 56px;
+}
+
+.fixedButton {
+    position: fixed;
+    bottom: 16px;
+    width: calc(100vw - 32px);
+}
+
+.weekdays {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-around;
+    padding: 8px 16px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(94, 110, 135, 0.5);
+}
+
+.table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+}
+
+.cell {
+    text-align: center;
+    line-height: 36px;
+    color: #e7e8e9;
+    padding: 5px;
+}
+
+.activeCell {
+    color: #111820;
+}
+
+.same {
+    background-color: #003594;
+    color: white;
+    border-radius: 6px;
+    border: 5px solid #e6ebf4;
+    padding: 0;
+}
+
+.muted {
+    color: #e7e8e9;
+}
+
+.cell:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.cell:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.sameRangeRight {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.sameRangeLeft {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.range {
+    background-color: #e6ebf4;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 10px;
+    text-transform: capitalize;
+    color: rgba(94, 110, 135, 0.5);
+}
+
+.title > * + * {
+    margin-left: 10px;
+}
+
+.titleRow {
+    flex: 1 1 30%;
+    height: 1px;
+    background: #dfe3eb;
+}
+
+.buttonTitle {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.buttonTitleLink {
+    margin: 12px 10px 0 0;
+    color: #003594;
+}

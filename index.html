@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+        <meta name="description" content="utair flutter testing app" />
+
+        <!-- iOS meta tags & icons -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="utair_flutter" />
+        <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="favicon.png" />
+
+        <title>Билеты Utair на официальном сайте - Напрямую дешевле!</title>
+        <link rel="manifest" href="manifest.json" />
+
+        <!-- Google ReCaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lc_4asUAAAAANLBRFZfS9kcsu5BhW3bxsS5TZo9"></script>
+        <style>
+          .grecaptcha-badge { visibility: hidden; }
+        </style>
+
+        <script>
+            // The value below is injected by flutter build, do not touch.
+            var serviceWorkerVersion = '4004319687';
+            var flutterApp = null;
+        </script>
+        <!-- This script adds the flutter initialization JS code -->
+        <script src="flutter.js" defer></script>
+        <script defer="defer" src="build/static/js/main.30492099.js"></script>
+        <link href="build/static/css/main.dbd27bd5.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            window.addEventListener("load", function (ev) {
+                // Download main.dart.js
+                _flutter.loader
+                    .loadEntrypoint({
+                        serviceWorker: {
+                            serviceWorkerVersion: serviceWorkerVersion,
+                        },
+                    })
+                    .then(function (engineInitializer) {
+                        return engineInitializer.initializeEngine();
+                    })
+                    .then(function (appRunner) {
+                        flutterApp = appRunner;
+                        if (location.pathname !== "/") {
+                            return appRunner.runApp();
+                        }
+                    });
+            });
+        </script>
+    </body>
+</html>

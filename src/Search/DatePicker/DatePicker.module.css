@@ -1,0 +1,82 @@
+.wrapper {
+    flex: 1;
+    height: 64px;
+}
+
+.datePicker {
+    width: 574px;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    flex: 0 0 50%;
+    line-height: 56px;
+    text-align: center;
+    background-color: #dfe3eb;
+    cursor: pointer;
+}
+
+.tab:first-child {
+    border-top-left-radius: 4px;
+}
+
+.tab:last-child {
+    border-top-right-radius: 4px;
+}
+
+.tabActive {
+    background-color: white;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+
+.calndarWrapper {
+    position: relative;
+}
+
+.calndarNavBar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.calendar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendarTitle {
+    text-transform: capitalize;
+    margin: 19px 0;
+}
+
+@media screen and (max-width: 920px) {
+    .wrapper :global(.utair-global-list) {
+        top: 166px;
+        left: 10px;
+        width: calc(100vw - 20px - var(--scrollbar-width));
+    }
+
+    .datePicker {
+        width: unset;
+    }
+}

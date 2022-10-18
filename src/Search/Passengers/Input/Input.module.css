@@ -1,0 +1,30 @@
+.toggle {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.toggle.focus {
+    border-bottom: 4px solid rgba(0, 53, 148, 0.3);
+}
+
+.toggleIcon {
+    margin-right: 5px;
+}
+
+.plurals {
+    margin-left: 3px;
+}
+
+.placeholder {
+    color: rgba(94, 110, 135, 0.8);
+}
+
+@media screen and (max-width: 420px) {
+    .plurals {
+        display: none;
+    }
+}

@@ -1,0 +1,65 @@
+.route {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.citySelectorWrapper {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+}
+
+.citySelector {
+    flex: 1;
+}
+
+.icon {
+    display: none;
+}
+
+.swap {
+    color: rgba(94, 110, 135, 0.8);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1090px) {
+    .citySelector :global(.utair-global-list) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .citySelector :global(.utair-global-list) {
+        top: 94px;
+        left: 10px;
+        width: calc(100vw - 20px - var(--scrollbar-width));
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .route {
+        position: relative;
+        padding: 0 50px 0 18px;
+    }
+
+    .citySelectorWrapper {
+        flex: 0 0 100%;
+    }
+
+    .citySelectorWrapper:first-child {
+        border-bottom: 1px solid #dfe3eb;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .swap {
+        position: absolute;
+        right: 16px;
+        transform: rotate(90deg);
+    }
+}

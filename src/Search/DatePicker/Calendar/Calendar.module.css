@@ -1,0 +1,58 @@
+.calendar {
+    border-collapse: collapse;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headCell {
+    padding: 5px 5px 20px;
+    vertical-align: middle;
+    text-align: center;
+    color: #737576;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.bodyCell {
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.beforeCell {
+    color: #888c90;
+    cursor: default;
+}
+
+.beforeCell.weekEnd {
+    color: #ee9194;
+}
+
+.activeCell {
+    cursor: pointer;
+}
+
+.activeCell:hover {
+    color: #003594;
+    background-color: #dfe3eb;
+}
+
+.weekEnd {
+    color: #dc2328;
+}
+
+.activeCell.same {
+    color: white;
+    background-color: #003594;
+}
+
+.activeCell.range {
+    background-color: #eff1f5;
+}
+
+.muted {
+    color: #888c90;
+}

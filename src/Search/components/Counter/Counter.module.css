@@ -1,0 +1,11 @@
+.counter {
+    display: flex;
+}
+
+.value {
+    color: #003594;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.38em;
+}

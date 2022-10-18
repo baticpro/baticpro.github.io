@@ -1,0 +1,78 @@
+@import "~utair-ui-kit/build/variables";
+
+:global(.PhoneInput) {
+    border: 1px solid $primary-30;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: $dark;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+:global(.PhoneInputCountry) {
+    margin-right: 15px;
+}
+
+:global(.PhoneInputCountrySelectArrow) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5.5px 0 5.5px;
+    border-color: $primary transparent transparent transparent;
+    transform: none;
+    opacity: 1;
+    margin-left: 12px;
+}
+
+:global(.PhoneInputInput) {
+    border: 0;
+    line-height: 24px;
+}
+
+:global(.PhoneInput--focus),
+:global(.PhoneInput:hover) {
+    border-color: $primary;
+}
+
+.rootErrorStatus {
+    :global(.PhoneInput) {
+        border-color: $error-30;
+    }
+
+    :global(.PhoneInput--focus),
+    :global(.PhoneInput:hover) {
+        border-color: $error;
+    }
+}
+
+.message {
+    font-size: 12px;
+    line-height: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.messageActive {
+    max-height: 36px;
+    padding-top: 4px;
+}
+
+.rootErrorStatus .message {
+    color: $error;
+}
+
+@media (max-width: $tablet-screen-width) {
+    :global(.PhoneInput) {
+        background-color: $dark-10;
+    }
+
+    :global(.PhoneInputInput) {
+        background-color: transparent;
+    }
+
+    :global(.PhoneInput--focus),
+    :global(.PhoneInput:hover) {
+        border-color: $dark-10;
+    }
+}
